@@ -1,0 +1,39 @@
+title: Kernel Thinkspace
+description: This is my personal space for exploring, documenting, and understanding the Linux kernel.
+baseurl: "/thinkspace-kernel" # the subpath of your site
+url: "https://legendary-acp.github.io" # the base hostname & protocol
+
+# Theme settings
+theme_mode: light # dark or light
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Author settings
+author:
+  name: Pradyuman
+  email: meetupradyuman@gmail.com
+  github_username: legendary-acp
+
+# Build settings
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-feed
+
+paginate: 5
+paginate_path: "/page:num/"
+
+# Additional settings
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .travis.yml
+  - README.md
+  - LICENSE
+  - .gitignore

@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.2.0"
+gem "jekyll-theme-thinkspace"
+gem "webrick", "~> 1.7"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+gem "jekyll-gist"
+gem "jekyll-seo-tag"
+gem "jekyll-feed"
