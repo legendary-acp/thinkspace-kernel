@@ -36,13 +36,6 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 
-# navbar pages
-# navbar:
-#   - slug : about
-#     title: About
-#   - slug : blog
-#     title: Blog
-
 exclude:
   - "gulp"
   - "node_modules"
