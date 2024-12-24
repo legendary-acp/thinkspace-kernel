@@ -1,39 +1,67 @@
-title: Kernel Thinkspace
-description: This is my personal space for exploring, documenting, and understanding the Linux kernel.
-baseurl: "/thinkspace-kernel" # the subpath of your site
-url: "https://legendary-acp.github.io" # the base hostname & protocol
+# Site settings
+title_left    : "Think"
+title_right   : "space"
+description   : ""
+keywords      : "thinkspace kernel linux"
+url           : https://legendary-acp.github.io # Replace with your GitHub username
+baseurl       : "/thinkspace-kernel" # your repository name
+cover         : "" # image uri like logo/cover image for site seo
+comments_enabled  : false
+disqus_shortname : ""
+postshare_enabled : false
 
-# Theme settings
-theme_mode: light # dark or light
-markdown: kramdown
-permalink: /:year/:month/:day/:title/
+# Build settings
+permalink   : /:year/:month/:date/:title/
+markdown    : kramdown
+highlighter : rouge
+source      : ./
+destination : ./_site
+
+# Sass configuration
+sass:
+  sass_dir  : assets/scss
+  style     : compressed
 
 # Author settings
 author:
-  name: Pradyuman
-  email: meetupradyuman@gmail.com
-  github_username: legendary-acp
+  name     : "Pradyuman" # Replace with your name
 
-# Build settings
+# Plugins
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-feed
+  - jekyll-paginate
+  - bourbon
 
+# Pagination
 paginate: 5
 paginate_path: "/page:num/"
 
-# Additional settings
-sass:
-  style: compressed
+# navbar pages
+# navbar:
+#   - slug : about
+#     title: About
+#   - slug : blog
+#     title: Blog
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - .travis.yml
-  - README.md
-  - LICENSE
-  - .gitignore
+  - "gulp"
+  - "node_modules"
+  - "bower"
+  - "bower_components"
+  - "config.rb"
+  - "src"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".rvmrc"
+  - ".rbenv-version"
+  - "package.json"
+  - "gulpfile.js"
+  - "README.md"
+  - "Rakefile"
+  - "changelog.md"
+  - "script"
+  - "vendor"
+  - "thinkspace.gemspec"
+  - ".sass-cache"
+  - ".jekyll-cache"
+  - "gemfiles"
