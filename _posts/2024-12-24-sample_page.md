@@ -6,5 +6,6 @@ tags: [week1, topic1]
 ---
 
 Here's my blog post content.
+Some text here
 
 ![Image Description](/thinkspace-kernel/assets/images/your-image.jpg)
